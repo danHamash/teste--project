@@ -176,6 +176,8 @@ transition: 1s;
 color: var(--cor-secundary);
 }
 .arrow{
+    width: 40px;
+    height: 40px;
     margin: 4rem 0 2rem 0 ;
     color: var(--cor-tertiary);
     animation: arrow_flutter 1s infinite;
@@ -300,9 +302,22 @@ margin-bottom: 3rem;
 
 
 @media (max-width: 400px){
+    section{
+        padding: 2.5rem 1rem;
+    }
     .header_btn {
         width: 100%;
     }
+    .header_name h1, .main_section_about_title, .project_container_title h2{
+        font-size:2.5rem;  
+    }
+    .header_paragraph, .main_section_abou_paragraph{
+        font-size: 1rem;
+    }
+    .card_title{
+        font-size: 1.3rem;
+    } 
+    
 }
 
 
