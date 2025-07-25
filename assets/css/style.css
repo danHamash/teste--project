@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+a[href^="tel"] {
+  color: inherit !important;
+  text-decoration: none !important;
+  pointer-events: none;
+  cursor: default;
+}
 :root{
     --cor-primary: #5750E5;
     --cor-secundary:#6C28D9;
@@ -412,14 +417,12 @@ form{
     flex-direction: column;
 }
 input{
+    color: #fff;
     width: 100%;
     margin: .4rem 0 1.5rem 0;
     height: 40px;
     background: transparent;
-
-}
-input::placeholder{
-padding-left: .5rem;
+    padding-left: .5rem;
 }
 textarea{
 height: 80px;
@@ -450,8 +453,12 @@ footer{
     }
     .header_btn {
         width: 100%;
+        font-size: .9rem;
     }
-    .header_name h1, .main_section_about_title, .project_container_title h2{
+    .header_name h1{
+        font-size:3rem;
+    }
+    .main_section_about_title, .project_container_title h2{
         font-size:2.5rem;  
     }
     .header_paragraph, .main_section_abou_paragraph{
