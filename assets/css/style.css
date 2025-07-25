@@ -72,17 +72,21 @@ section{
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
+      font-size: 3rem;
+      margin-bottom: 1rem;
 }
 .paragraph{
     color: var(--cor-tertiary);
     max-width: 42rem;
-    margin-bottom: 2rem;
     text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
 }
 .card_title{
     margin: 1rem 0;
     font-weight: bold;
-    color: #fff;
+    color: #fff;;
 }
 .btn{
     align-items: center;
@@ -96,6 +100,10 @@ section{
     color: var(--cor-tertiary);
     align-items: center;
     font-weight: 400;
+}
+.border{
+    border: 1px solid #2f2f30;
+    border-radius: 12px;
 }
 
 
@@ -135,9 +143,6 @@ section{
 .header_name h1{
     font-size:4.5rem ;
     margin-bottom: 1.2rem;
-}
-.header_paragraph{
-    font-size: 1.4rem;
 }
 .header_btn{
 display: flex;
@@ -182,15 +187,6 @@ color: var(--cor-secundary);
     color: var(--cor-tertiary);
     animation: arrow_flutter 1s infinite;
 }
-.main_section_about_title{
-    font-size:3rem ;
-    margin-bottom: 1rem;
-}
-.main_section_abou_paragraph{
-margin: 0 auto;
-font-size: 1.2rem;
-margin-bottom: 3rem;
-}
 .card_about_container{
     width: 90%;
     display: grid;
@@ -203,8 +199,6 @@ margin-bottom: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid #2f2f30;
-    border-radius: 12px;
     padding: 2rem;
 }
 .card_about:hover{
@@ -230,10 +224,6 @@ margin-bottom: 3rem;
 }
 
 
-.project_container_title h2{
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
 .project_container_title p{
     text-align: center;
     margin: 0 auto;
@@ -249,16 +239,17 @@ margin-bottom: 3rem;
 }
 .card_project{
     background-color: var(--cor-sextiary);
-    padding: 2rem;
-    border: 1px solid #2f2f30;
-    border-radius: 12px;
-    transition: 2s;
+    padding: 1.2rem;
+    transition: .5s;
 }
 .card_project:hover{
     scale: 1.1;
 }
 .card_project_title h1{
     font-weight: 400;
+}
+.card_project:hover h1{
+    color: var(--cor-secundary);
 }
 .card_project p{
     font-size: .8rem;
@@ -279,12 +270,18 @@ margin-bottom: 3rem;
     font-size: .7rem;
     font-weight: bold;
 }
+.skil_project span:hover{
+    background-color: #9158f33b ;
+}
 .link_project{
     display: flex;
     flex-direction: row;
 }
+.link_project svg{
+    color: #fff;
+}
 .link_project a{
-    width: 70px;
+    width: 90px;
     font-size: 1rem;
     text-align: center;
     text-decoration: none;
@@ -292,10 +289,156 @@ margin-bottom: 3rem;
     padding: .3rem;
     margin: .3rem;
 }
+.tecnology_container{
+    margin: 0 auto;
+    width: 90%;
+    
+}
+.tecnology_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.tecnology_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+.tecnology_title{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #300e66;
+}
+.tecnology_item_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 50px;
+}
+.tecnology_item{
+    background: #2A303F;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 30px;
+    border: 1px solid #300e66;
+    
+}
+.talk_contact_content{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.talk_contact{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
 
 
+.contact_card_title_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+
+}
+.contact_item-1, .contact_item-3{
+
+    color: var(--cor-quintenary);
+}
+.contact_item-2{
+    
+    color: #276ff7
+}
+.contact_card_title_content svg {
+    width: 40px;
+    padding-right: 10px;
+}
+.talk_contact_card{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+.talk_contact_card p{
+    text-align: start;
+    font-weight: 300;
+    font-size: .9rem;
+    margin: 0;
+    
+}
+.form_container{
+    padding: 20px;
+}
+.form_user{
+    display: flex;
+    flex-direction: row;
+}
+.form_title{
+    font-size: 1rem;
+    margin: .4rem 0;
+}
+.form_email{
+    margin-left: 1rem;
+    overflow: hidden;
+}
+.form_about{
+    display: flex;
+    flex-direction: column;
+}
+.form_btn{
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form_btn svg{
+margin-right: .7rem;
+color: #fff;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 100%;
+    margin: .4rem 0 1.5rem 0;
+    height: 40px;
+    background: transparent;
+
+}
+input::placeholder{
+padding-left: .5rem;
+}
+textarea{
+height: 80px;
+width: 100%;
+background: transparent;
+margin-top: .4rem;
+}
+textarea::placeholder{
+    padding: .5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: var(--cor-sextiary);
+}
 
 
 
@@ -320,10 +463,20 @@ margin-bottom: 3rem;
     .arrow{
         margin-bottom: 2rem;
     }
+    .talk_contact_card, .talk_contact_content,.form_container {
+    width: 100%;
     
 }
 
+    
+}
 
+@media (max-width: 700px){
+  
+.form_container {
+    margin-top: 2rem;
+}
+}
 
 
 
